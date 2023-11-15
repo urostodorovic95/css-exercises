@@ -7,6 +7,30 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.container-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #eee;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   width: 600px;
 }
@@ -24,4 +48,19 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 20px;
 }
